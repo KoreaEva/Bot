@@ -25,7 +25,7 @@ Web App Name은 웹서버의 이름을 정해야 합니다. 이 이름은 URL로
 
 
 이제 마지막으로 Publish 버튼을 선택하면 바로 배포가 진행됩니다. <br>
-배포과정은 그리 오래 걸리지 않습니다.
+배포과정은 그리 오래 걸리지 않습니다.<br>
 ![https://github.com/KoreaEva/Bot/blob/master/HOL/images/3-7.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/3-7.png)<br>
 ![https://github.com/KoreaEva/Bot/blob/master/HOL/images/3-8.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/3-8.png)
 
