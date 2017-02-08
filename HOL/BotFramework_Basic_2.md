@@ -34,7 +34,7 @@ App development made easy with Visual Studio: Developer tools and services for a
 www.visualstudio.com
 
 무료 버전인 Community Edition도 사용 가능하다. 
-![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-1.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-1.png)
+
 
 Any Developer, Any App, Any Platform | Visual Studio
 App development made easy with Visual Studio: Developer tools and services for any platform and any language. IDE, Devops, code e...
@@ -44,9 +44,7 @@ www.visualstudio.com
 - http://aka.ms/bf-bc-vstemplate 에서 탬플릿을 먼저 다운로드 받습니다.
 - 다운받은 파일을 "%USERPROFILE%\Documents\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\" 에 복사합니다.
  - 마지막으로 Visual Studio를 열고 C# 프로젝트를 선택해 보면 Bot Application이 포함된 것을 볼 수 있습니다. 
-![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-2.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-2.png)
-
-
+![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-1.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-1.png)
 
 2. Bot 실행하기
 Bot 기본 템플릿에서는 샘플로 Controllers\MessagesController.cs 파일안에 Post 메소드가 이미 작성되어 있다. 여기에는 사용자가 말한 내용의 길이를 회신하는 간단한 코드가 작성되어 있다. 
@@ -81,7 +79,7 @@ public class MessagesController : ApiController
 ~~~
 
 이 샘플을 바로 실행 시켜보면 다음과 같이 나타나면서 아무런 동작을 하지 않는 것을 볼 수 있다. 
-![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-3.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-3.png)
+![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-2.jpg](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-2.jpg)
 
 
 3. Emulator
@@ -89,11 +87,11 @@ public class MessagesController : ApiController
 Bot 에뮬레이터는 https://download.botframework.com/bf-v3/tools/emulator/publish.htm 에서 다운로드 받아 설치 할 수 있습니다.
 
 Bot Emulator를 실행하고 나면 Visual Studio에서 방금 생성된 Bot 응용 프로그램일 실행하고 나서 해당 Url을 Bot Emulator에 복사한다. 그리고 MicrosoftAppId, MicrosoftApppassword 란은 비워둡니다.
-![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-4.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-4.png)
+![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-3.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-3.png)
 
 
 이제 Bot에 Hello라고 입력하면 You send Hello which was 5 characters라고 리턴되는 것을 볼 수 있습니다.
-![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-5.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-5.png)
+![https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-4.png](https://github.com/KoreaEva/Bot/blob/master/HOL/images/2-4.png)
 
 이렇게 Bot Framework을 사용해서 Bot을 생성하고 테스트 하는 방법까지 살펴 보았습니다. 
 다음 포스팅에서는 만들어진 봇을 어떻게 배포하고 디렉토리에 등록하는지 보겠습니다. 
