@@ -1,0 +1,166 @@
+1.------------------------------------
+
+    if (activity.Type == ActivityTypes.Message)
+            {
+                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+
+                string message = string.Format("{0}을 주문 받았습니다. 감사합니다.", activity.Text);
+
+            	// return our reply to the user
+            	Activity reply = activity.CreateReply(message);
+            	await connector.Conversations.ReplyToActivityAsync(reply);
+            }
+            else
+            {
+                HandleSystemMessage(activity);
+            }
+            var response = Request.CreateResponse(HttpStatusCode.OK);
+            return response;
+
+
+2.-------------------------------------
+
+            ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+
+
+
+3.-------------------------------------
+
+            if (activity != null)
+            {
+                string message;
+                Activity reply;
+
+                // one of these will have an interface and process it
+                switch (activity.GetActivityType())
+                {
+                    case ActivityTypes.Message:
+                        message = string.Format("{0}을 주문 받았습니다. 감사합니다.", activity.Text);
+
+                        // return our reply to the user
+                        reply = activity.CreateReply(message);
+                        await connector.Conversations.ReplyToActivityAsync(reply);
+
+                        break;
+
+                    case ActivityTypes.ConversationUpdate:
+                        message = string.Format("안녕하세요 만리장성 봇 입니다. 주문하실 메뉴를 입력해 주세요", activity.Text);
+
+                        reply = activity.CreateReply(message);
+                        await connector.Conversations.ReplyToActivityAsync(reply);
+
+                        break;
+
+                    case ActivityTypes.ContactRelationUpdate:
+                    case ActivityTypes.Typing:
+                    case ActivityTypes.DeleteUserData:
+                    default:
+                        break;
+                }
+            }
+            return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
+        }
+
+4.---------------------------------------------------------------
+
+StateClient stateClient = activity.GetStateClient();
+
+
+5.---------------------------------------------------------------
+
+                        message = string.Format("{0}을 주문 받았습니다. 감사합니다.", activity.Text);
+
+                        // return our reply to the user
+                        reply = activity.CreateReply(message);
+                        await connector.Conversations.ReplyToActivityAsync(reply);
+
+                        BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
+
+                        string menu = activity.Text;
+                        menu += "," + userData.GetProperty<string>("MENU");
+
+                        userData.SetProperty<string>("MENU", menu);
+                        await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
+
+                        reply = activity.CreateReply("주문내역:" + menu);
+                        await connector.Conversations.ReplyToActivityAsync(reply);
+
+
+6.----------------------------------------------------------------
+                    case ActivityTypes.DeleteUserData:
+                        await stateClient.BotState.DeleteStateForUserAsync(activity.ChannelId, activity.From.Id);
+                        break;
+
+7.----------------------------------------------------------------
+	using Microsoft.Bot.Builder.Dialogs;
+
+8.----------------------------------------------------------------
+    [Serializable]
+    public class FoodDialog : IDialog<object>
+    {
+        private string MENU;
+
+        public async Task StartAsync(IDialogContext context)
+        {
+            context.Wait(MessageReceivedAsync);
+        }
+
+        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
+        {
+            var activity = await argument;
+            ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+
+            string message;
+
+            message = string.Format("{0}을 주문 받았습니다. 감사합니다.", activity.Text);
+
+            // return our reply to the user
+            await context.PostAsync(message);
+
+            MENU += activity.Text + ",";
+
+            await context.PostAsync("주문내역:" + MENU);
+
+            context.Wait(MessageReceivedAsync);
+        }
+    }
+
+9.-----------------------------------------------------------------
+	await Conversation.SendAsync(activity, () => new FoodDialog());
+
+
+10.-----------------------------------------------------------------
+	using Microsoft.Bot.Builder.FormFlow;
+
+11.-----------------------------------------------------------------
+    public enum FoodOptions
+    {
+        자장면, 짬뽕, 탕수육, 기스면, 란자완스
+    };
+    public enum LengthOptions { 보통, 곱배기};
+
+12.------------------------------------------------------------------
+    [Serializable]
+    public class FoodOrder
+    {
+        public FoodOptions? Food;
+        public LengthOptions? Length;
+
+        public static IForm<FoodOrder> BuildForm()
+        {
+            return new FormBuilder<FoodOrder>()
+                    .Message("만리장성에 오신 여러분을 환영합니다.")
+                    .Build();
+        }
+    }
+
+13.--------------------------------------------------------------------
+
+        internal static IDialog<FoodOrder> MakeRootDialog()
+        {
+            return Chain.From(() => FormDialog.FromForm(FoodOrder.BuildForm));
+        }
+
+14.--------------------------------------------------------------------
+	await Conversation.SendAsync(activity, MakeRootDialog);
+
