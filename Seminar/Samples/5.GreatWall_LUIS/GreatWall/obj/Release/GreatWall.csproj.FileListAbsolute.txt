@@ -1,0 +1,39 @@
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Bot Application1.dll.config
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Bot Application1.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Bot Application1.pdb
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Autofac.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Chronic.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Bot.Builder.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Bot.Connector.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Newtonsoft.Json.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Net.Http.Formatting.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Web.Http.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Web.Http.WebHost.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Autofac.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Bot.Builder.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Bot.Connector.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\Newtonsoft.Json.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Net.Http.Formatting.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Web.Http.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\System.Web.Http.WebHost.xml
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\obj\Release\GreatWall.csprojResolveAssemblyReference.cache
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\obj\Release\Bot Application1.dll
+C:\Users\yowkim\Desktop\GreatWall_LUIS\GreatWall\obj\Release\Bot Application1.pdb
