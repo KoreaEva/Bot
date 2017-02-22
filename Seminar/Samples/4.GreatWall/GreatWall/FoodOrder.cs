@@ -10,6 +10,7 @@ namespace GreatWall
     public enum FoodOptions { 자장면, 짬뽕, 탕수육, 기스면, 란자완스 };
     public enum LengthOptions { 보통, 곱배기 };
 
+    [Serializable]
     public class FoodOrder
     {
         public FoodOptions? Food;

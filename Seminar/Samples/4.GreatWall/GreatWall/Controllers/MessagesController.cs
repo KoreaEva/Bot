@@ -9,6 +9,7 @@ using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
 
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.FormFlow;
 
 namespace GreatWall
 {
@@ -32,8 +33,8 @@ namespace GreatWall
                 switch (activity.GetActivityType())
                 {
                     case ActivityTypes.Message:
-                        await Conversation.SendAsync(activity, () => new FoodDialog());
-                        //await Conversation.SendAsync(activity, MakeRootDialog);
+                        //await Conversation.SendAsync(activity, () => new FoodDialog());
+                        await Conversation.SendAsync(activity, MakeRootDialog);
 
                         break;
 

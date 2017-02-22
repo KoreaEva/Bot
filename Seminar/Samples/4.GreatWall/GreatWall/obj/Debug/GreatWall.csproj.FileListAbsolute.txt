@@ -76,3 +76,42 @@ C:\Users\yowkim\Documents\Visual Studio 2017\Projects\4.GreatWall\GreatWall\bin\
 C:\Users\yowkim\Documents\Visual Studio 2017\Projects\4.GreatWall\GreatWall\obj\Debug\GreatWall.csprojResolveAssemblyReference.cache
 C:\Users\yowkim\Documents\Visual Studio 2017\Projects\4.GreatWall\GreatWall\obj\Debug\Bot Application1.dll
 C:\Users\yowkim\Documents\Visual Studio 2017\Projects\4.GreatWall\GreatWall\obj\Debug\Bot Application1.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\obj\Debug\GreatWall.csprojResolveAssemblyReference.cache
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\obj\Debug\Bot Application1.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\obj\Debug\Bot Application1.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Bot Application1.dll.config
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Bot Application1.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Bot Application1.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Autofac.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Chronic.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Bot.Builder.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Bot.Connector.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Newtonsoft.Json.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Net.Http.Formatting.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Web.Http.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Web.Http.WebHost.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Autofac.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Bot.Builder.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Bot.Connector.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\Newtonsoft.Json.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Net.Http.Formatting.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Web.Http.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\System.Web.Http.WebHost.xml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\4.GreatWall\GreatWall\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
