@@ -1,0 +1,12 @@
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe.config
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.pdb
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csprojResolveAssemblyReference.cache
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.Properties.Resources.resources
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.GenerateResource.Cache
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.exe
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.pdb
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.dll
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.xml
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.frmMain.resources
+c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.ResolveComReference.cache

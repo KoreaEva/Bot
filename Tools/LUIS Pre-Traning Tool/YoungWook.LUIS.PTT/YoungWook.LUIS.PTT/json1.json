@@ -1,0 +1,1457 @@
+﻿{
+  "luis_schema_version": "2.0.0",
+  "versionId": "0.1",
+  "name": "Test",
+  "desc": "",
+  "culture": "ko-kr",
+  "intents": [
+    { "name": "order" },
+    { "name": "delivery" },
+    { "name": "greeting" }
+  ],
+  "entities": [
+    { "name": "menu" },
+    { "name": "size" },
+    { "name": "quantity" }
+  ],
+  "composites": null,
+  "closedLists": null,
+  "bing_entities": [],
+  "actions": null,
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "자장면 한그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "자장면 두그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "자장면 세그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "자장면 네그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "자장면 다섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "자장면 여섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "자장면 일곱그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "자장면 여덜그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "자장면 아홉그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "자장면 열그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "자장면 하나 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 둘 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "자장면 셋 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "자장면 넷 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "자장면 다섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 여섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 일곱 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 여덜 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 여덟 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 아홉 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 열 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 한그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 두그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 세그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 네그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 다섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 여섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 일곱그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 여덜그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 아홉그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 열그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 하나 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 둘 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 셋 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 넷 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 다섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 여섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 일곱 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 여덜 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 여덟 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 아홉 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 열 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "quantity",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "탕수육 한그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "탕수육 두그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "탕수육 세그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "탕수육 네그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "탕수육 다섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "탕수육 여섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "탕수육 일곱그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "탕수육 여덜그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "탕수육 아홉그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "탕수육 열그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "탕수육 하나 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 둘 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "탕수육 셋 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "탕수육 넷 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "탕수육 다섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 여섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 일곱 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 여덜 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 여덟 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 아홉 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "탕수육 열 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "quantity",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "란자완스 한그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "란자완스 두그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "란자완스 세그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "란자완스 네그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "란자완스 다섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "란자완스 여섯그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "란자완스 일곱그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "란자완스 여덜그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "란자완스 아홉그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "란자완스 열그릇 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "란자완스 하나 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 둘 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "란자완스 셋 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "란자완스 넷 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "란자완스 다섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 여섯 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 일곱 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 여덜 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 여덟 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 아홉 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "란자완스 열 보내줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "quantity",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "자장면 줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "짬뽕 줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "탕수육 줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "란자완스 줘",
+      "intent": "order",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "자장면는 언제와?",
+      "intent": "delivery",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "짬뽕는 언제와?",
+      "intent": "delivery",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "탕수육는 언제와?",
+      "intent": "delivery",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "란자완스는 언제와?",
+      "intent": "delivery",
+      "entities": [
+        {
+          "entity": "menu",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}
