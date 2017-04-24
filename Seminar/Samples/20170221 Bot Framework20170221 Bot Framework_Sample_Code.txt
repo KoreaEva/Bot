@@ -4,7 +4,7 @@
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 
-                string message = string.Format("{0}À» ÁÖ¹® ¹Þ¾Ò½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.", activity.Text);
+                string message = string.Format("{0}ï¿½ï¿½ ï¿½Ö¹ï¿½ ï¿½Þ¾Ò½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.", activity.Text);
 
             	// return our reply to the user
             	Activity reply = activity.CreateReply(message);
@@ -35,7 +35,7 @@
                 switch (activity.GetActivityType())
                 {
                     case ActivityTypes.Message:
-                        message = string.Format("{0}À» ÁÖ¹® ¹Þ¾Ò½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.", activity.Text);
+                        message = string.Format("{0}ï¿½ï¿½ ï¿½Ö¹ï¿½ ï¿½Þ¾Ò½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.", activity.Text);
 
                         // return our reply to the user
                         reply = activity.CreateReply(message);
@@ -44,7 +44,7 @@
                         break;
 
                     case ActivityTypes.ConversationUpdate:
-                        message = string.Format("¾È³çÇÏ¼¼¿ä ¸¸¸®Àå¼º º¿ ÀÔ´Ï´Ù. ÁÖ¹®ÇÏ½Ç ¸Þ´º¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä", activity.Text);
+                        message = string.Format("ï¿½È³ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½å¼º ï¿½ï¿½ ï¿½Ô´Ï´ï¿½. ï¿½Ö¹ï¿½ï¿½Ï½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½", activity.Text);
 
                         reply = activity.CreateReply(message);
                         await connector.Conversations.ReplyToActivityAsync(reply);
@@ -68,7 +68,7 @@ StateClient stateClient = activity.GetStateClient();
 
 5.---------------------------------------------------------------
 
-                        message = string.Format("{0}À» ÁÖ¹® ¹Þ¾Ò½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.", activity.Text);
+                        message = string.Format("{0}ï¿½ï¿½ ï¿½Ö¹ï¿½ ï¿½Þ¾Ò½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.", activity.Text);
 
                         // return our reply to the user
                         reply = activity.CreateReply(message);
@@ -82,7 +82,7 @@ StateClient stateClient = activity.GetStateClient();
                         userData.SetProperty<string>("MENU", menu);
                         await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
 
-                        reply = activity.CreateReply("ÁÖ¹®³»¿ª:" + menu);
+                        reply = activity.CreateReply("ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½:" + menu);
                         await connector.Conversations.ReplyToActivityAsync(reply);
 
 
@@ -112,14 +112,14 @@ StateClient stateClient = activity.GetStateClient();
 
             string message;
 
-            message = string.Format("{0}À» ÁÖ¹® ¹Þ¾Ò½À´Ï´Ù. °¨»çÇÕ´Ï´Ù.", activity.Text);
+            message = string.Format("{0}ï¿½ï¿½ ï¿½Ö¹ï¿½ ï¿½Þ¾Ò½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.", activity.Text);
 
             // return our reply to the user
             await context.PostAsync(message);
 
             MENU += activity.Text + ",";
 
-            await context.PostAsync("ÁÖ¹®³»¿ª:" + MENU);
+            await context.PostAsync("ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½:" + MENU);
 
             context.Wait(MessageReceivedAsync);
         }
@@ -135,9 +135,9 @@ StateClient stateClient = activity.GetStateClient();
 11.-----------------------------------------------------------------
     public enum FoodOptions
     {
-        ÀÚÀå¸é, Â«»Í, ÅÁ¼öÀ°, ±â½º¸é, ¶õÀÚ¿Ï½º
+        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, Â«ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½â½ºï¿½ï¿½, ï¿½ï¿½ï¿½Ú¿Ï½ï¿½
     };
-    public enum LengthOptions { º¸Åë, °ö¹è±â};
+    public enum LengthOptions { ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½};
 
 12.------------------------------------------------------------------
     [Serializable]
@@ -149,7 +149,7 @@ StateClient stateClient = activity.GetStateClient();
         public static IForm<FoodOrder> BuildForm()
         {
             return new FormBuilder<FoodOrder>()
-                    .Message("¸¸¸®Àå¼º¿¡ ¿À½Å ¿©·¯ºÐÀ» È¯¿µÇÕ´Ï´Ù.")
+                    .Message("ï¿½ï¿½ï¿½ï¿½ï¿½å¼ºï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¯ï¿½ï¿½ï¿½Õ´Ï´ï¿½.")
                     .Build();
         }
     }
@@ -164,3 +164,12 @@ StateClient stateClient = activity.GetStateClient();
 14.--------------------------------------------------------------------
 	await Conversation.SendAsync(activity, MakeRootDialog);
 
+15.-----------------------------------QnA MakeRootDialog
+                using QnaMakerApi;
+                
+                string message = "";
+                using (var client = new QnaMakerClient("633be6fd99a64f87b5cfd7d8486b568c"))
+                {
+                    var result = await client.GenerateAnswer(new Guid("134b8499-94c1-4804-bab1-95a2019a4aa2"), activity.Text);
+                    message = result.Answers[0].Answer;
+                }
