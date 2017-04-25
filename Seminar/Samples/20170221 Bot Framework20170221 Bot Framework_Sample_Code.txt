@@ -4,7 +4,7 @@
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 
-                string message = string.Format("{0}�� �ֹ� �޾ҽ��ϴ�. �����մϴ�.", activity.Text);
+                string message = string.Format("{0}을 주문하셨습니다. 감사합니다.", activity.Text);
 
             	// return our reply to the user
             	Activity reply = activity.CreateReply(message);
@@ -35,7 +35,7 @@
                 switch (activity.GetActivityType())
                 {
                     case ActivityTypes.Message:
-                        message = string.Format("{0}�� �ֹ� �޾ҽ��ϴ�. �����մϴ�.", activity.Text);
+                        message = string.Format("{0}을 주문하셨습니다. 감사합니다.", activity.Text);
 
                         // return our reply to the user
                         reply = activity.CreateReply(message);
@@ -44,7 +44,7 @@
                         break;
 
                     case ActivityTypes.ConversationUpdate:
-                        message = string.Format("�ȳ��ϼ��� �����强 �� �Դϴ�. �ֹ��Ͻ� �޴��� �Է��� �ּ���", activity.Text);
+                        message = string.Format("안녕하세요 신속배달 만리장성 봇 입니다.", activity.Text);
 
                         reply = activity.CreateReply(message);
                         await connector.Conversations.ReplyToActivityAsync(reply);
@@ -68,7 +68,7 @@ StateClient stateClient = activity.GetStateClient();
 
 5.---------------------------------------------------------------
 
-                        message = string.Format("{0}�� �ֹ� �޾ҽ��ϴ�. �����մϴ�.", activity.Text);
+                        message = string.Format("{0}를 주문하셨습니다.", activity.Text);
 
                         // return our reply to the user
                         reply = activity.CreateReply(message);
@@ -82,7 +82,7 @@ StateClient stateClient = activity.GetStateClient();
                         userData.SetProperty<string>("MENU", menu);
                         await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
 
-                        reply = activity.CreateReply("�ֹ�����:" + menu);
+                        reply = activity.CreateReply("주문매뉴:" + menu);
                         await connector.Conversations.ReplyToActivityAsync(reply);
 
 
@@ -112,14 +112,14 @@ StateClient stateClient = activity.GetStateClient();
 
             string message;
 
-            message = string.Format("{0}�� �ֹ� �޾ҽ��ϴ�. �����մϴ�.", activity.Text);
+            message = string.Format("{0}를 주문하셨습니다. 감사합니다.", activity.Text);
 
             // return our reply to the user
             await context.PostAsync(message);
 
             MENU += activity.Text + ",";
 
-            await context.PostAsync("�ֹ�����:" + MENU);
+            await context.PostAsync("주문내역:" + MENU);
 
             context.Wait(MessageReceivedAsync);
         }
@@ -135,9 +135,9 @@ StateClient stateClient = activity.GetStateClient();
 11.-----------------------------------------------------------------
     public enum FoodOptions
     {
-        ������, «��, ������, �⽺��, ���ڿϽ�
+        자장면, 탕수육, 짬뽕, 양장피, 란자완스
     };
-    public enum LengthOptions { ����, ������};
+    public enum LengthOptions { 보통, 곱배기};
 
 12.------------------------------------------------------------------
     [Serializable]
@@ -149,7 +149,7 @@ StateClient stateClient = activity.GetStateClient();
         public static IForm<FoodOrder> BuildForm()
         {
             return new FormBuilder<FoodOrder>()
-                    .Message("�����强�� ���� �������� ȯ���մϴ�.")
+                    .Message("안녕하세요 신속배달 만리장성 봇입니다.")
                     .Build();
         }
     }
@@ -173,3 +173,105 @@ StateClient stateClient = activity.GetStateClient();
                     var result = await client.GenerateAnswer(new Guid("134b8499-94c1-4804-bab1-95a2019a4aa2"), activity.Text);
                     message = result.Answers[0].Answer;
                 }
+
+16.------------------------------------ Dialog Navigation
+RootDialog.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+using System.Threading.Tasks;
+using Microsoft.Bot.Connector;
+using Microsoft.Bot.Builder.Dialogs;
+
+namespace Bot_Application4.Dialogs
+{
+    [Serializable]
+    public class RootDialog : IDialog<object>
+    {
+        public async Task StartAsync(IDialogContext context)
+        {
+            context.Wait(MessageReceivedAsync);
+        }
+
+        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
+        {
+            var activity = await argument;
+
+            
+            await this.SendWelcomeMessageAsync(context);
+        }
+
+        private async Task SendWelcomeMessageAsync(IDialogContext context)
+        {
+            await context.PostAsync("ROOT Dialog 입니다.");
+
+            context.Call(new SubDialog(), RootDialogResumeAfter);
+        }
+
+        private async Task RootDialogResumeAfter(IDialogContext context, IAwaitable<string> result)
+        {
+            try
+            {
+                await context.PostAsync("Root Dialog로 돌아왔습니다.");
+            }
+            catch (TooManyAttemptsException)
+            {
+                await context.PostAsync("I'm sorry, I'm having issues understanding you. Let's try again.");
+
+            }
+        }
+
+
+    }
+}
+
+18.------------------------------------ Dialog Navigation
+SubDialog.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+using System.Threading.Tasks;
+using Microsoft.Bot.Connector;
+using Microsoft.Bot.Builder.Dialogs;
+
+namespace Bot_Application4.Dialogs
+{
+    [Serializable]
+    public class SubDialog : IDialog<string>
+    {
+        public async Task StartAsync(IDialogContext context)
+        {
+            context.Wait(MessageReceivedAsync);
+        }
+
+        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
+        {
+            var activity = await argument;
+
+            string message = "Sub Dialog 입니다.";
+
+            // return our reply to the user
+            await context.PostAsync(message);
+
+            context.Wait(MessageReceivedAsync);
+
+            if (activity.Text == "그만")
+            {
+                try
+                {
+                    context.Done("test");
+                }
+                catch(Exception e)
+                {
+                    string errorMessage = e.Message;
+                }
+            }
+        }
+    }
+}
