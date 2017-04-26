@@ -92,7 +92,9 @@ StateClient stateClient = activity.GetStateClient();
                         break;
 
 7.----------------------------------------------------------------
-	using Microsoft.Bot.Builder.Dialogs;
+using System.Threading.Tasks;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Connector;
 
 8.----------------------------------------------------------------
     [Serializable]
