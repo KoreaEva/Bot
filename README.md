@@ -1,13 +1,24 @@
 # Bot
 Bot 관련 정보들을 모아둡니다. 
 
-## Bot Portal Site< 
+## Bot Portal Site
 [https://dev.botframework.com/](https://dev.botframework.com/)
+
+## 개발 환경 구성
+[Visual Studio 2017](https://www.visualstudio.com/)<br>
+[Bot Framework Template](http://aka.ms/bf-bc-vstemplate)<br>
+[Bot Emulator](http://emulator.botframework.com/)<br>
+[Azure Free Trial](https://azure.microsoft.com/ko-kr/free/)<br>
+[Cognitive Service](https://azure.microsoft.com/ko-kr/services/cognitive-services/)<br>
+[LUIS](https://www.luis.ai/)<br>
+[QnA Maker](https://qnamaker.ai/)
+
 
 ## 동영상 강좌
 Building a Conversational Bot: From 0 to 60[https://channel9.msdn.com/Events/Build/2016/B821](https://channel9.msdn.com/Events/Build/2016/B821)<br>
 Introduction to the Microsoft Bot Framework[https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Introduction-to-the-Microsoft-Bot-Framework](https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Introduction-to-the-Microsoft-Bot-Framework)<br>
-Microsoft Bot Framework and how we created the Azure Bot[https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Microsoft-Bot-Framework-and-how-we-created-the-Azure-Bot](https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Microsoft-Bot-Framework-and-how-we-created-the-Azure-Bot)
+Microsoft Bot Framework and how we created the Azure Bot[https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Microsoft-Bot-Framework-and-how-we-created-the-Azure-Bot](https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Microsoft-Bot-Framework-and-how-we-created-the-Azure-Bot)<br>
+Introduce LUIS[https://www.youtube.com/watch?v=Qrsv2Clr3ts](https://www.youtube.com/watch?v=Qrsv2Clr3ts)<br>
 
 ## Seminars PPT
 2016.12.17 스마트앱 개발자 포럼 [https://github.com/KoreaEva/Bot/blob/master/PPT/Bot%20Framework%20Overivew.pdf](https://github.com/KoreaEva/Bot/blob/master/PPT/Bot%20Framework%20Overivew.pdf)
