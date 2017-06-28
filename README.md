@@ -29,3 +29,8 @@ Microsoft Bot Framework 시작해보기 (1) [http://youngwook.com/220833049518](
 Microsoft Bot Framework 시작해보기 (2) Hello Bot framework [http://youngwook.com/220833329084](http://youngwook.com/220833329084)<br> 
 Microsoft Bot Framework 시작해보기 (3) Bot Application 배포 [http://youngwook.com/220833898434](http://youngwook.com/220833898434)<br>
 Microsoft Bot Framework 시작해보기 (4) Bot 등록과 스카이프에서 테스트 하기 [http://youngwook.com/220838138807](http://youngwook.com/220838138807)<br>
+
+
+## LUIS 교육을 위한 Pre-Training Tool ##
+
+[https://github.com/KoreaEva/Bot/tree/master/Tools/LUIS%20Pre-Traning%20Tool](https://github.com/KoreaEva/Bot/tree/master/Tools/LUIS%20Pre-Traning%20Tool)
