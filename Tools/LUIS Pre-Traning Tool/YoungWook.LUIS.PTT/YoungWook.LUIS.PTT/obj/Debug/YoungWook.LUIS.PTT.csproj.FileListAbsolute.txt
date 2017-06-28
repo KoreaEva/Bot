@@ -10,3 +10,15 @@ c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWo
 c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.xml
 c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.frmMain.resources
 c:\users\yowkim\documents\visual studio 2017\Projects\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.ResolveComReference.cache
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe.config
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.pdb
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csprojResolveAssemblyReference.cache
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.ResolveComReference.cache
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.frmMain.resources
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.Properties.Resources.resources
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.GenerateResource.Cache
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.exe
+C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.pdb
