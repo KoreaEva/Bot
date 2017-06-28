@@ -12,6 +12,7 @@ LUIS에서는 Intent와 Entity를 학습 시켜야 하며 문장 단위로 학�
  ## 기본 템플릿 ##
  
  기본 템플릿 파일은 아래 링크에서 참조할 수 있다. 
+ [https://github.com/KoreaEva/Bot/blob/master/Tools/LUIS%20Pre-Traning%20Tool/LUIS_Data.xlsx](https://github.com/KoreaEva/Bot/blob/master/Tools/LUIS%20Pre-Traning%20Tool/LUIS_Data.xlsx)
 
  ## 소스코드 ##
 
