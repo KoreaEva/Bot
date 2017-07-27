@@ -20,3 +20,24 @@ c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\Direct
 c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userUserMessage.baml
 c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userBotMessage.g.cs
 c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userBotMessage.baml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF.csprojResolveAssemblyReference.cache
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userBotMessage.g.cs
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userUserMessage.g.cs
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\App.g.cs
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF_MarkupCompile.cache
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF_MarkupCompile.lref
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\DirectLineClient-WPF.exe.config
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\DirectLineClient-WPF.exe
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\DirectLineClient-WPF.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\Microsoft.Bot.Connector.DirectLine.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userBotMessage.baml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\Controls\userUserMessage.baml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\MainWindow.baml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF.g.resources
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient_WPF.Properties.Resources.resources
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF.csproj.GenerateResource.Cache
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF.exe
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\DirectLineClient-WPF.pdb
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\bin\Debug\Microsoft.Rest.ClientRuntime.dll

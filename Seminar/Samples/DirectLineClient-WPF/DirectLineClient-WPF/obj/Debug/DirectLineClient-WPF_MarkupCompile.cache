@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\obj\Debug\
 DirectLineClient_WPF
 none
 false
 DEBUG;TRACE
-c:\users\young\documents\visual studio 2017\Projects\DirectLineClient-WPF\DirectLineClient-WPF\App.xaml
+C:\Users\yowkim\Documents\Github\Bot\Seminar\Samples\DirectLineClient-WPF\DirectLineClient-WPF\App.xaml
 3-2023499388
 
 7-33703445
-20-1648741708
+20-413015709
 Controls\userBotMessage.xaml;Controls\userUserMessage.xaml;MainWindow.xaml;
 
 False
