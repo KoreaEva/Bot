@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Microsoft.Bot.Connector.DirectLine;
 using System.Threading.Tasks;
 using System.Configuration;
+using Microsoft.Web.Redis;
 
 namespace KakaoConnector.Controllers
 {
@@ -16,20 +17,26 @@ namespace KakaoConnector.Controllers
         private string botId = ConfigurationManager.AppSettings["BotId"];
         private string fromUser = "DirectLineSampleClientUser";
         private Conversation Conversation = null;
-        DirectLineClient Client = null;
 
+        DirectLineClient Client = null;
+        
         // GET: Message
         public async Task<ActionResult> Index(string user_key, string type, string content)
         {
-            Activity replyMessage = new Activity
-            {
-                From = new ChannelAccount(id: "test", name: "kakao"),
-                Type = ActivityTypes.Message,
-                Text = "hi"
-            };
 
             Client = new DirectLineClient(directLineSecret);
-            this.Conversation = Client.Conversations.StartConversation();
+
+            if (Session["cid"] as string != null)
+            {
+                this.Conversation = Client.Conversations.ReconnectToConversation((string)Session["CONVERSTAION_ID"]);
+            }
+            else
+            {
+                this.Conversation = Client.Conversations.StartConversation();
+
+                Session["cid"] = Conversation.ConversationId;
+            }
+
 
             Activity userMessage = new Activity
             {
@@ -58,7 +65,7 @@ namespace KakaoConnector.Controllers
 
                 foreach (Activity activity in activities)
                 {
-                    message.text = activity.Text;
+                    message.text = activity.Text + "--" + this.Conversation.ConversationId;
                 }
 
                 return Json(messageResponse, JsonRequestBehavior.AllowGet);            //return View();
