@@ -3,12 +3,14 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
+using System.Collections.Generic;
+
 namespace GreatWall.Dialogs
 {
     [Serializable]
     public class RootDialog : IDialog<object>
     {
-        private string WelcomeMessage = "신속배달 만리장성 봇입니다. 1.주문 2.FAQ";
+        private string WelcomeMessage = "신속배달 만리장성 봇입니다";
 
         public Task StartAsync(IDialogContext context)
         {
@@ -21,6 +23,24 @@ namespace GreatWall.Dialogs
         {
             await context.PostAsync(WelcomeMessage);
 
+            var message = context.MakeMessage();
+
+            var actions = new List<CardAction>();
+
+            actions.Add(new CardAction() { Title = "1.주문", Value = "1" });
+            actions.Add(new CardAction() { Title = "2.FAQ", Value = "2" });
+
+
+            message.Attachments.Add(
+                new HeroCard
+                {
+                    Title = "원하는 기능을 선택하세요",
+                    Buttons = actions
+                }.ToAttachment()
+            );
+
+            await context.PostAsync(message);
+
             context.Wait(SendWelcomeMessageAsync);
         }
 
@@ -31,7 +51,6 @@ namespace GreatWall.Dialogs
 
             if (selected == "1")
             {
-                await context.PostAsync("음식 주문 메뉴 입니다. 원하시는 음식을 입력해 주십시오.");
                 context.Call(new OrderDialog(), DialogResumeAfter);
             }
             else if (selected == "2")
@@ -54,7 +73,8 @@ namespace GreatWall.Dialogs
             {
                 string message = await result;
 
-                await context.PostAsync(WelcomeMessage); ;
+                //await context.PostAsync(WelcomeMessage); ;
+                await this.MessageReceivedAsync(context, result);
             }
             catch (TooManyAttemptsException)
             {

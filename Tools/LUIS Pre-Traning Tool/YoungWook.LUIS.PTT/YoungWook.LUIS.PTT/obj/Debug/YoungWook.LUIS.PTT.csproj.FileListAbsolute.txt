@@ -22,3 +22,16 @@ C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.P
 C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.GenerateResource.Cache
 C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.exe
 C:\Users\young\Documents\GitHub\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.pdb
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe.config
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.exe
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\YoungWook.LUIS.PTT.pdb
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csprojResolveAssemblyReference.cache
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.ResolveComReference.cache
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.frmMain.resources
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.Properties.Resources.resources
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.GenerateResource.Cache
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.csproj.CoreCompileInputs.cache
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.exe
+C:\Users\yowkim\Documents\Github\Bot\Tools\LUIS Pre-Traning Tool\YoungWook.LUIS.PTT\YoungWook.LUIS.PTT\obj\Debug\YoungWook.LUIS.PTT.pdb
