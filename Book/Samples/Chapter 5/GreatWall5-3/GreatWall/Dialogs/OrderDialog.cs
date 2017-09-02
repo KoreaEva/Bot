@@ -25,7 +25,15 @@ namespace GreatWall.Dialogs
             if (result != null)
             {
                 var activity = await result as Activity;
-                await context.PostAsync(activity.Text + "를 주문하셨습니다.");
+
+                if(activity.Text == "주문")
+                {
+                    await context.PostAsync("주문이 완료 되었습니다. 감사합니다.");
+                    context.Done("");
+                    return;
+                }
+                else
+                    await context.PostAsync(activity.Text + "를 주문하셨습니다.");
             }
             else
                 await context.PostAsync("메뉴를 선택해 주십시오");
