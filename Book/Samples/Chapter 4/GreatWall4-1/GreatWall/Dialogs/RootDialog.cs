@@ -19,7 +19,7 @@ namespace GreatWall.Dialogs
         {
             await context.PostAsync("안녕하세요 신속배달 만리장성 봇 입니다. 주문하시려는 음식을 입력해 주세요");
 
-            context.Wait(MessageReceivedAsync);
+            context.Wait(SendWelcomeMessageAsync);
         }
 
         private async Task SendWelcomeMessageAsync(IDialogContext context, IAwaitable<object> result)

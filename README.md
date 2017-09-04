@@ -23,6 +23,11 @@ Microsoft Bot Framework에서 Dialog 활용하기 [http://youngwook.com/22105904
 Microsoft Bot Frameowkr 시작하기 QnA Maker 활용법 [http://youngwook.com/221061055000](http://youngwook.com/221061055000)<br>
 Microsoft Bot Framework와 다양한 메신저, 앱, 디바이스와 연결하는 DirectLine 3.0 기능 활용하기.[http://youngwook.com/221060005993](http://youngwook.com/221060005993)<br>
 Microsoft Bot Framework 시작하기 Direct Line API의 WPF 클라이언트 만들기[http://youngwook.com/221060689373](http://youngwook.com/221060689373)<br>
+Microsoft Bot Framework 시작하기 카카오톡 연결하기[http://youngwook.com/221068691533](http://youngwook.com/221068691533)<br>
+
+## 추천도서 
+
+집필중... (10월 출간 예정 Comming soon...)<br>
 
 ## 동영상 강좌
 Building a Conversational Bot: From 0 to 60[https://channel9.msdn.com/Events/Build/2016/B821](https://channel9.msdn.com/Events/Build/2016/B821)<br>

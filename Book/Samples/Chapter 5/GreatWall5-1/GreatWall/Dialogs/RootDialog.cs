@@ -44,11 +44,6 @@ namespace GreatWall.Dialogs
             context.Wait(SendWelcomeMessageAsync);
         }
 
-        private void Gathering(IDialogContext context)
-        {
-
-        }
-
         private async Task SendWelcomeMessageAsync(IDialogContext context, IAwaitable<object> result)
         {
             var activity = await result as Activity;
