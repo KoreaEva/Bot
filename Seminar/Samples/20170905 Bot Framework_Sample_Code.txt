@@ -38,6 +38,9 @@
         }
 
 4.------- Dialog의 구현
+	
+	string WelcomeMessage = "안녕하세요 만리장석 봇입니다. 1.주문 2.FAQ 중에 선택하세요";
+
 
         private async Task SendWelcomeMessageAsync(IDialogContext context, IAwaitable<object> result)
         {
@@ -115,7 +118,7 @@ namespace GreatWall.Dialogs
             {
                 string message = await result;
 
-                await context.PostAsync(WelcomeMessage); ;
+		await this.MessageReceivedAsync(context, result);
             }
             catch (TooManyAttemptsException)
             {
@@ -360,6 +363,84 @@ OrderDialog.cs
 
             context.Wait(this.MessageReceivedAsync);
         }
+
+
+13-1 ------ /Helpers/CardHelper의 추가
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Connector;
+
+namespace GreatWall.Helpers
+{
+    public static class CardHelper
+    {
+        public static Attachment GetHeroCard(string title, string subTitle, string image, string buttonText, string buttonValue)
+        {
+            //이미지 객체의 생성
+            List<CardImage> images = new List<CardImage>();
+            images.Add(new CardImage() { Url = image });
+
+            //버튼의 생성
+            List<CardAction> buttons = new List<CardAction>();
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+
+            HeroCard card = new HeroCard()
+            {
+                Title = title,
+                Subtitle = subTitle,
+                Images = images,
+                Buttons = buttons
+            };
+
+            return card.ToAttachment();
+        }
+
+        public static Attachment GetThumbnailCard(string title, string subTitle, string image, string buttonText, string buttonValue)
+        {
+            //이미지 객체의 생성
+            List<CardImage> images = new List<CardImage>();
+            images.Add(new CardImage() { Url = image });
+
+            //버튼의 생성
+            List<CardAction> buttons = new List<CardAction>();
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+
+            ThumbnailCard card = new ThumbnailCard()
+            {
+                Title = title,
+                Subtitle = subTitle,
+                Images = images,
+                Buttons = buttons
+            };
+
+            return card.ToAttachment();
+        }
+
+        public static Attachment GetHeroCard(string title, List<ReceiptItem> items, string total, string tax, string vat, string buttonText, string buttonValue)
+        {
+            //버튼의 생성
+            List<CardAction> buttons = new List<CardAction>();
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+
+            ReceiptCard card = new ReceiptCard
+            {
+                Title = title,
+                Items = items,
+                Tax = tax,
+                Total = total,
+                Vat = vat,
+                Buttons = buttons
+            };
+
+            return card.ToAttachment();
+        }
+    }
+}
 
 14.------- QnAMaker
 
