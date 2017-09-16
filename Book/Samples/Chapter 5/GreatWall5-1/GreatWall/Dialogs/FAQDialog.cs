@@ -12,11 +12,10 @@ namespace GreatWall.Dialogs
     [Serializable]
     public class FAQDialog : IDialog<string>
     {
-        public Task StartAsync(IDialogContext context)
+        public async Task StartAsync(IDialogContext context)
         {
+            await context.PostAsync("FAQ 서비스 입니다. 질문을 입력해 주십시오.");
             context.Wait(MessageReceivedAsync);
-
-            return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)

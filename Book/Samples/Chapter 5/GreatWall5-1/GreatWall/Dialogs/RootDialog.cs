@@ -51,13 +51,11 @@ namespace GreatWall.Dialogs
 
             if (selected == "1")
             {
-                await context.PostAsync("음식 주문 메뉴 입니다. 원하시는 음식을 입력해 주십시오.");
                 context.Call(new OrderDialog(), DialogResumeAfter);
             }
             else if (selected == "2")
             {
-                await context.PostAsync("FAQ 서비스 입니다. 질문을 입력해 주십시오.");
-                context.Call(new FAQDialog(), DialogResumeAfter);
+                 context.Call(new FAQDialog(), DialogResumeAfter);
                 
             }
             else

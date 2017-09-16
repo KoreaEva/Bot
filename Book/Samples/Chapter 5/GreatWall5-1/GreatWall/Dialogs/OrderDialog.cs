@@ -12,11 +12,10 @@ namespace GreatWall.Dialogs
     [Serializable]
     public class OrderDialog : IDialog<string>
     {
-        public Task StartAsync(IDialogContext context)
+        public async Task StartAsync(IDialogContext context)
         {
+            await context.PostAsync("음식 주문 메뉴 입니다. 원하시는 음식을 입력해 주십시오. 주문을 완료하려면 그만 이라고 입력하세요.");
             context.Wait(MessageReceivedAsync);
-
-            return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
