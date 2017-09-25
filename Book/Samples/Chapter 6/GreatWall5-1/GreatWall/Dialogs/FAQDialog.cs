@@ -15,7 +15,6 @@ namespace GreatWall.Dialogs
         public async Task StartAsync(IDialogContext context)
         {
             await context.PostAsync("FAQ 서비스 입니다. 질문을 입력해 주십시오.");
-
             context.Wait(MessageReceivedAsync);
         }
 

@@ -55,7 +55,7 @@ namespace GreatWall.Dialogs
             }
             else if (selected == "2")
             {
-                context.Call(new FAQDialog(), DialogResumeAfter);
+                 context.Call(new FAQDialog(), DialogResumeAfter);
                 
             }
             else
