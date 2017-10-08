@@ -10,12 +10,13 @@ using Microsoft.Bot.Builder.Dialogs;
 namespace GreatWall.Dialogs
 {
     [Serializable]
-    public class OrderDialog : IDialog<string>
+    public class FAQDialog : IDialog<string>
     {
-        public async Task StartAsync(IDialogContext context)
+        public Task StartAsync(IDialogContext context)
         {
-            await context.PostAsync("음식 주문 메뉴 입니다. 원하시는 음식을 입력해 주십시오. 주문을 완료하려면 그만 이라고 입력하세요.");
             context.Wait(MessageReceivedAsync);
+
+            return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
@@ -28,9 +29,7 @@ namespace GreatWall.Dialogs
             }
             else
             {
-                string message = string.Format("{0}을 주문하셨습니다. 감사합니다.", activity.Text);
-
-                await context.PostAsync(message);
+                await context.PostAsync("FAQ Dialog 입니다.");
 
                 context.Wait(MessageReceivedAsync);
             }

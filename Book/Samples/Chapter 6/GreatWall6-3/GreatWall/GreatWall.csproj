@@ -124,6 +124,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CardHelper.cs" />
+    <Compile Include="Helpers\SQLHelper.cs" />
+    <Compile Include="Model\OrderItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

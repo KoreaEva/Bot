@@ -109,6 +109,7 @@
     <Content Include="Images\menu1.JPG" />
     <Content Include="Images\menu2.JPG" />
     <Content Include="Images\menu3.JPG" />
+    <Content Include="Images\order.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -122,6 +123,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CardHelper.cs" />
+    <Compile Include="Model\OrderItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

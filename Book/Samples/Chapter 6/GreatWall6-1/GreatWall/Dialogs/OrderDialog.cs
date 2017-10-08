@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
 using GreatWall.Helpers;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace GreatWall.Dialogs
 {
@@ -39,11 +41,20 @@ namespace GreatWall.Dialogs
                 await context.PostAsync("메뉴를 선택해 주십시오");
 
             //메뉴 출력
+            SqlConnection con = new SqlConnection("Server=tcp:greatwalldbserver.database.windows.net,1433;Initial Catalog=greatwalldb;Persist Security Info=False;User ID=winkey;Password=!greatwall1004;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Menus", con);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+
             var message = context.MakeMessage();
             message.Attachments.Add(CardHelper.GetHeroCard("지금 주문", "지금 주문합니다.", this.ServerUrl + "order.jpg", "바로 주문", "주문"));
-            message.Attachments.Add(CardHelper.GetHeroCard("자장면 \\2,500", "전통적인 자장면 입니다.", this.ServerUrl + "menu1.JPG", "자장면", "자장면"));
-            message.Attachments.Add(CardHelper.GetHeroCard("짬뽕 \\3,000", "시원한 국물의 짬뽕입니다.", this.ServerUrl + "menu2.JPG", "짬뽕", "짬뽕"));
-            message.Attachments.Add(CardHelper.GetHeroCard("탕수육 \\5,000", "부먹찍먹 모두 맛있는 탕수육 입니다.", this.ServerUrl + "menu3.JPG", "탕수육", "탕수육"));
+
+            foreach(DataRow row in ds.Tables[0].Rows)
+            {
+                message.Attachments.Add(CardHelper.GetHeroCard(row["Title"].ToString(), row["Subtitle"].ToString(), this.ServerUrl + row["Images"].ToString(), row["Title"].ToString(), row["MenuID"].ToString()));
+            }
 
             message.AttachmentLayout = "carousel";
 

@@ -55,7 +55,8 @@ namespace GreatWall.Dialogs
             }
             else if (selected == "2")
             {
-                 context.Call(new FAQDialog(), DialogResumeAfter);
+                await context.PostAsync("FAQ 서비스 입니다. 질문을 입력해 주십시오.");
+                context.Call(new FAQDialog(), DialogResumeAfter);
                 
             }
             else
