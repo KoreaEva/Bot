@@ -42,7 +42,7 @@ namespace GreatWall.Dialogs
                         receiptItems.Add(new ReceiptItem()
                         {
                             Title = orderItem.Title,
-                            Price = orderItem.Price.ToString(),
+                            Price = orderItem.Price.ToString("##########"),
                             Quantity = orderItem.Quantity.ToString(),
                         });
 
@@ -113,7 +113,7 @@ namespace GreatWall.Dialogs
                     string orderMenus = "";
                     foreach(OrderItem orderItem in MenuItems)
                     {
-                        orderMenus += orderItem.Title + "/" + orderItem.Price + "\n\n";
+                        orderMenus += orderItem.Title + "/" + orderItem.Price.ToString("########") + "\n\n";
                     }
 
                     await context.PostAsync(orderMenus);
