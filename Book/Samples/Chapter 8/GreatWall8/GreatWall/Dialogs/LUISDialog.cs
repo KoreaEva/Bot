@@ -11,7 +11,7 @@
     using Microsoft.Bot.Builder.Luis.Models;
     using Microsoft.Bot.Connector;
 
-    [LuisModel("d550355f-3389-46d7-ae3c-8a610a718438", "45b9b62a11a04220a79d948a7a7893b4")]
+    [LuisModel("79cee8ff-ee05-4d9f-a3c4-8061c67be195", "45b9b62a11a04220a79d948a7a7893b4")]
     [Serializable]
     public class LUISDialog : LuisDialog<string>
     {
@@ -26,7 +26,7 @@
             context.Wait(this.MessageReceived);
         }
 
-        [LuisIntent("order")]
+        [LuisIntent("Order")]
         public async Task Order(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
         {
             var message = await activity;
@@ -39,21 +39,23 @@
             string size = "보통";
             string quantity = "한그릇";
 
-            if(result.TryFindEntity("menu", out menuEntityRecommendation))
+            if(result.TryFindEntity("Menu", out menuEntityRecommendation))
             {
                 menu = menuEntityRecommendation.Entity.Replace(" ", "");
             }
             else
             {
                 await context.PostAsync("없는 메뉴를 선택했습니다.");
+                context.Wait(this.MessageReceived);
+                return;
             }
 
-            if (result.TryFindEntity("size", out sizeEntityRecommendation))
+            if (result.TryFindEntity("Size", out sizeEntityRecommendation))
             {
                 size = sizeEntityRecommendation.Entity.Replace(" ", "");
             }
 
-            if (result.TryFindEntity("quantity", out quantityEntityRecommendation))
+            if (result.TryFindEntity("Quantity", out quantityEntityRecommendation))
             {
                 quantity = quantityEntityRecommendation.Entity.Replace(" ", "");
             }
@@ -62,6 +64,22 @@
             await context.PostAsync($"{menu} {size} {quantity}를 주문하셨습니다.");
 
             context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("Delivery")]
+        public async Task Delivery(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        {
+            await context.PostAsync("출발 했습니다. 잠시만 기다려 주세요.");
+
+            context.Wait(this.MessageReceived);
+        }
+
+        [LuisIntent("Finish")]
+        public async Task Finish(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        {
+            await context.PostAsync("주문 완료 되었습니다. 감사합니다.");
+
+            context.Done("주문완료");
         }
     }
 }
