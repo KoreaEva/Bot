@@ -11,7 +11,7 @@ using QnaMakerApi;
 namespace GreatWall.Dialogs
 {
     [Serializable]
-    public class FAQDialog : IDialog<string>
+    public class FAQDialog : Microsoft.Bot.Builder.C<string>
     {
         public Task StartAsync(IDialogContext context)
         {
