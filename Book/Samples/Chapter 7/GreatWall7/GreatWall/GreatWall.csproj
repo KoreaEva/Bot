@@ -55,6 +55,12 @@
     <Reference Include="Microsoft.Bot.Builder.Autofac, Version=3.15.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bot.Builder.3.15.3\lib\net46\Microsoft.Bot.Builder.Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding, Version=1.1.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bot.Builder.CognitiveServices.1.1.7\lib\net46\Microsoft.Bot.Builder.CognitiveServices.LuisActionBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder.CognitiveServices.QnAMaker, Version=1.1.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bot.Builder.CognitiveServices.1.1.7\lib\net46\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bot.Connector, Version=3.15.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bot.Connector.3.15.3\lib\net46\Microsoft.Bot.Connector.dll</HintPath>
     </Reference>
@@ -83,8 +89,8 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="QnaMaker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\QnaMaker.1.0.1\lib\net452\QnaMaker.dll</HintPath>
+    <Reference Include="QnAMakerDialog, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QnAMakerDialog.3.1.2\lib\net46\QnAMakerDialog.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

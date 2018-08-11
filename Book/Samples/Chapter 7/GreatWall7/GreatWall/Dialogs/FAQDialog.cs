@@ -6,41 +6,57 @@ using System.Web;
 using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
-using QnaMakerApi;
+using System.Threading;
+using QnAMakerDialog.Models;
+using QnAMakerDialog;
+
 
 namespace GreatWall.Dialogs
 {
     [Serializable]
-    public class FAQDialog : Microsoft.Bot.Builder.C<string>
+    //[QnAMakerService("https://westus.api.cognitive.microsoft.com/qnamaker/v4.0","7a8abeed-12d4-4513-90f8-48cab30a42ee","592fd964-0e7b-4d9b-b343-6a15f27e429d",MaxAnswers = 5)]
+    [QnAMakerService("https://greatwallqna.azurewebsites.net/qnamaker","7a8abeed-12d4-4513-90f8-48cab30a42ee", "592fd964-0e7b-4d9b-b343-6a15f27e429d", MaxAnswers = 5)]
+    public class FAQDialog : QnAMakerDialog<string>
     {
-        public Task StartAsync(IDialogContext context)
+        /// <summary>
+        /// Handler used when the QnAMaker finds no appropriate answer
+        /// </summary>
+        public override async Task NoMatchHandler(IDialogContext context, string originalQueryText)
         {
-            context.Wait(MessageReceivedAsync);
-
-            return Task.CompletedTask;
+            await context.PostAsync($"Sorry, I couldn't find an answer for '{originalQueryText}'.");
+            context.Wait(MessageReceived);
         }
 
-        private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
+        public override async Task DefaultMatchHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
         {
-            var activity = await result as Activity;
-
-            if (activity.Text.Trim() == "그만")
+            if (originalQueryText == "그만")
             {
-                context.Done("주문완료");
+                context.Done("");
+                return;
             }
-            else
-            {
-                string message = "";
-                using (var client = new QnaMakerClient("633be6fd99a64f87b5cfd7d8486b568c"))
-                {
-                    var answer = await client.GenerateAnswer(new Guid("5b4c08ae-5535-4757-88a1-99014d48b483"), activity.Text);
-                    message = answer.Answers[0].Answer;
-                }
 
-                await context.PostAsync(message);
+            // ProcessResultAndCreateMessageActivity will remove any attachment markup from the results answer
+            // and add any attachments to a new message activity with the message activity text set by default
+            // to the answer property from the result
+            //var messageActivity = ProcessResultAndCreateMessageActivity(context, ref result);
+            //messageActivity.Text = $"I found {result.Answers.Length} answer(s) that might help...here is the first, which returned a score of {result.Answers.First().Score}...{result.Answers.First().Answer}";
 
-                context.Wait(MessageReceivedAsync);
-            }
+            await context.PostAsync(result.Answers.First().Answer);
+
+            context.Wait(MessageReceived);
+        }
+
+        /// <summary>
+        /// Handler to respond when QnAMakerResult score is a maximum of 0.5
+        /// </summary>
+        [QnAMakerResponseHandler(0.5)]
+        public async Task LowScoreHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
+        {
+            var messageActivity = ProcessResultAndCreateMessageActivity(context, ref result);
+            messageActivity.Text = $"I found an answer that might help...{result.Answers.First().Answer}.";
+            await context.PostAsync(messageActivity);
+
+            context.Wait(MessageReceived);
         }
     }
 }
