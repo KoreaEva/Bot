@@ -6,41 +6,44 @@ using System.Web;
 using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
-using QnaMakerApi;
+using System.Threading;
+using QnAMakerDialog.Models;
+using QnAMakerDialog;
+
 
 namespace GreatWall.Dialogs
 {
     [Serializable]
-    public class FAQDialog : IDialog<string>
+    [QnAMakerService("https://greatwallqna.azurewebsites.net/qnamaker", "be9a25bc-715b-4ec7-a50f-4be894748f90", "9936be9a-840a-470c-a182-7735c78cbf27", MaxAnswers = 5)]
+    public class FAQDialog : QnAMakerDialog<string>
     {
-        public Task StartAsync(IDialogContext context)
+        public override async Task NoMatchHandler(IDialogContext context, string originalQueryText)
         {
-            context.Wait(MessageReceivedAsync);
-
-            return Task.CompletedTask;
+            await context.PostAsync($"Sorry, I couldn't find an answer for '{originalQueryText}'.");
+            context.Wait(MessageReceived);
         }
 
-        private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
+        public override async Task DefaultMatchHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
         {
-            var activity = await result as Activity;
-
-            if (activity.Text.Trim() == "그만")
+            if (originalQueryText == "그만")
             {
-                context.Done("주문완료");
+                context.Done("");
+                return;
             }
-            else
-            {
-                string message = "";
-                using (var client = new QnaMakerClient("633be6fd99a64f87b5cfd7d8486b568c"))
-                {
-                    var answer = await client.GenerateAnswer(new Guid("5b4c08ae-5535-4757-88a1-99014d48b483"), activity.Text);
-                    message = answer.Answers[0].Answer;
-                }
 
-                await context.PostAsync(message);
+            await context.PostAsync(result.Answers.First().Answer);
 
-                context.Wait(MessageReceivedAsync);
-            }
+            context.Wait(MessageReceived);
+        }
+
+        [QnAMakerResponseHandler(0.5)]
+        public async Task LowScoreHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
+        {
+            var messageActivity = ProcessResultAndCreateMessageActivity(context, ref result);
+            messageActivity.Text = $"I found an answer that might help...{result.Answers.First().Answer}.";
+            await context.PostAsync(messageActivity);
+
+            context.Wait(MessageReceived);
         }
     }
 }

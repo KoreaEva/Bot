@@ -27,9 +27,9 @@ namespace GreatWall.Dialogs
 
             var actions = new List<CardAction>();
 
-            actions.Add(new CardAction() { Title = "1.주문", Value = "1" });
-            actions.Add(new CardAction() { Title = "2.FAQ", Value = "2" });
-            actions.Add(new CardAction() { Title = "3.자연어 처리", Value = "3" });
+            actions.Add(new CardAction() { Title = "1.주문", Value = "1", Type = ActionTypes.ImBack });
+            actions.Add(new CardAction() { Title = "2.FAQ", Value = "2", Type = ActionTypes.ImBack });
+            actions.Add(new CardAction() { Title = "3.자연어 처리", Value = "3", Type = ActionTypes.ImBack });
 
 
             message.Attachments.Add(
