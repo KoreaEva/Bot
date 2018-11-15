@@ -16,8 +16,8 @@ namespace CFE
         public async Task StartAsync(IDialogContext context)
         {
             await context.PostAsync("안녕하세요 CFE 봇 입니다. 궁금하신 내용을 질문하세요");
-            //context.Wait(MessageReceivedAsync);
-            context.Call(new FAQDialog(), DialogResumeAfter);
+            context.Wait(MessageReceivedAsync);
+            //context.Call(new FAQDialog(), DialogResumeAfter);
         }
 
         public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
