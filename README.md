@@ -13,6 +13,10 @@ Bot 관련 정보들을 모아둡니다.
 [LUIS](https://www.luis.ai/)<br>
 [QnA Maker](https://qnamaker.ai/)
 
+#CFE(Chatbot for Education)
+CFE는 교육환경에서 챗봇을 사용할 수 있게 발전시켜 나가고 있는 오픈소스 프로젝트 입니다. 일선 교육현장의 선생님들과 여러분들의 피드백으로 진행하고 있습니다. <br>
+[Chatbot for Education](https://github.com/KoreaEva/Bot/tree/master/CFE)<br>
+
 ## Microsoft Bot Framework 관련 강좌. (한글)
 
 Microsoft Bot Framework 시작해보기 (1) [http://youngwook.com/220833049518](http://youngwook.com/220833049518)<br>
@@ -27,7 +31,7 @@ Microsoft Bot Framework 시작하기 카카오톡 연결하기[http://youngwook.
 
 ## 추천도서 
 
-집필중... (10월 출간 예정 Comming soon...)<br>
+집필중... (12월 출간 예정 Comming soon...)<br>
 
 ## 동영상 강좌
 Building a Conversational Bot: From 0 to 60[https://channel9.msdn.com/Events/Build/2016/B821](https://channel9.msdn.com/Events/Build/2016/B821)<br>
