@@ -2,9 +2,12 @@
 Bot 관련 정보들을 모아둡니다. 
 
 ## 가장 빨리 만나는 챗봇 프로그래밍 with Bot Framework
-<img src="http://image.kyobobook.co.kr/images/book/xlarge/754/x9791160506754.jpg"><br>
-[Sample Download](https://github.com/KoreaEva/Bot/tree/master/Book/Samples)<br>
+![가장빨리 만나는 챗봇 프로그래밍 with Bot Framework](https://github.com/KoreaEva/Bot/blob/master/Book/book_cover.jpg?raw=true)<br>
 
+### 업데이트된 내용 (꼭 동영상을 봐주세요)
+[![업데이트](https://img.youtube.com/vi/YOg05jo7HjA/0.jpg)](https://www.youtube.com/watch?v=YOg05jo7HjA)<br>
+
+[Sample Download](https://github.com/KoreaEva/Bot/tree/master/Book/Samples)<br>
 
 ## Bot Portal Site
 [https://dev.botframework.com/](https://dev.botframework.com/)
