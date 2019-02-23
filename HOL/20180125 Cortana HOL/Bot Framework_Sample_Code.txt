@@ -2,7 +2,7 @@
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
         {
-            var activity = await result as Activity;
+            var activity = await argument as Activity;
 
             string message = string.Format("{0}을 주문하셨습니다. ", activity.Text);
 
@@ -172,6 +172,9 @@ namespace GreatWall.Dialogs
 
 RootDialog.cs
 
+	using System.Collections.Generic;
+
+
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
         {
             await context.PostAsync(WelcomeMessage);
@@ -180,8 +183,8 @@ RootDialog.cs
 
             var actions = new List<CardAction>();
 
-            actions.Add(new CardAction() { Title = "1.주문", Value = "1" });
-            actions.Add(new CardAction() { Title = "2.FAQ", Value = "2" });
+            actions.Add(new CardAction() { Title = "1.주문", Value = "1" , Type = ActionTypes.ImBack });
+            actions.Add(new CardAction() { Title = "2.FAQ", Value = "2" , Type = ActionTypes.ImBack });
 
 
             message.Attachments.Add(
@@ -225,7 +228,7 @@ RootDialog.cs
 10.------------------------------------------------------------------
 OrderDialog.cs
 
-        string ServerUrl = "http://greatwallweb.azurewebsites.net/Images/";
+        string ServerUrl = "https://greatwallkcd.azurewebsites.net/images/";
 
 11.--------------------------------------------------------------------
 
@@ -247,7 +250,7 @@ OrderDialog.cs
 
             //버튼의 생성
             List<CardAction> menu1Buttons = new List<CardAction>();
-            menu1Buttons.Add(new CardAction() { Title = "자장면", Value = "자장면" });
+            menu1Buttons.Add(new CardAction() { Title = "자장면", Value = "자장면", Type = ActionTypes.ImBack });
 
             HeroCard menu1Card = new HeroCard()
             {
@@ -265,7 +268,7 @@ OrderDialog.cs
 
             //버튼의 생성
             List<CardAction> menu2Buttons = new List<CardAction>();
-            menu2Buttons.Add(new CardAction() { Title = "짬뽕", Value = "짬뽕" });
+            menu2Buttons.Add(new CardAction() { Title = "짬뽕", Value = "짬뽕", Type = ActionTypes.ImBack });
 
             HeroCard menu2Card = new HeroCard()
             {
@@ -283,7 +286,7 @@ OrderDialog.cs
 
             //버튼의 생성
             List<CardAction> menu3Buttons = new List<CardAction>();
-            menu3Buttons.Add(new CardAction() { Title = "탕수육", Value = "탕수육" });
+            menu3Buttons.Add(new CardAction() { Title = "탕수육", Value = "탕수육", Type = ActionTypes.ImBack });
 
             HeroCard menu3Card = new HeroCard()
             {
@@ -387,7 +390,7 @@ namespace GreatWall.Helpers
 
             //버튼의 생성
             List<CardAction> buttons = new List<CardAction>();
-            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue, Type = ActionTypes.ImBack });
 
             HeroCard card = new HeroCard()
             {
@@ -408,7 +411,7 @@ namespace GreatWall.Helpers
 
             //버튼의 생성
             List<CardAction> buttons = new List<CardAction>();
-            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue, Type = ActionTypes.ImBack });
 
             ThumbnailCard card = new ThumbnailCard()
             {
@@ -425,7 +428,7 @@ namespace GreatWall.Helpers
         {
             //버튼의 생성
             List<CardAction> buttons = new List<CardAction>();
-            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue });
+            buttons.Add(new CardAction() { Title = buttonText, Value = buttonValue, Type = ActionTypes.ImBack });
 
             ReceiptCard card = new ReceiptCard
             {
@@ -442,105 +445,56 @@ namespace GreatWall.Helpers
     }
 }
 
+
 14.------- QnAMaker
 
-                using QnaMakerApi;
-                
-15.-----------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
-                string message = "";
-                using (var client = new QnaMakerClient("633be6fd99a64f87b5cfd7d8486b568c"))
-                {
-                    var result = await client.GenerateAnswer(new Guid("134b8499-94c1-4804-bab1-95a2019a4aa2"), activity.Text);
-                    message = result.Answers[0].Answer;
-                }
+using System.Threading.Tasks;
+using Microsoft.Bot.Connector;
+using Microsoft.Bot.Builder.Dialogs;
+using System.Threading;
+using QnAMakerDialog.Models;
+using QnAMakerDialog;
 
 
-16.----- LUIS
-
-LUISDialog.cs
 namespace GreatWall.Dialogs
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using System.Web;
-    using Microsoft.Bot.Builder.Dialogs;
-    using Microsoft.Bot.Builder.FormFlow;
-    using Microsoft.Bot.Builder.Luis;
-    using Microsoft.Bot.Builder.Luis.Models;
-    using Microsoft.Bot.Connector;
-
-    [LuisModel("79cee8ff-ee05-4d9f-a3c4-8061c67be195", "45b9b62a11a04220a79d948a7a7893b4")]
     [Serializable]
-    public class LUISDialog : LuisDialog<string>
+    [QnAMakerService("https://greatwallqna.azurewebsites.net/qnamaker", "be9a25bc-715b-4ec7-a50f-4be894748f90", "9936be9a-840a-470c-a182-7735c78cbf27", MaxAnswers = 5)]
+    public class FAQDialog : QnAMakerDialog<string>
     {
-        [LuisIntent("")]
-        [LuisIntent("None")]
-        public async Task None(IDialogContext context, LuisResult result)
+        public override async Task NoMatchHandler(IDialogContext context, string originalQueryText)
         {
-            string message = $"죄송합니다. 말씀을 이해하지 못했습니다.";
-
-            await context.PostAsync(message);
-
-            context.Wait(this.MessageReceived);
+            await context.PostAsync($"Sorry, I couldn't find an answer for '{originalQueryText}'.");
+            context.Wait(MessageReceived);
         }
 
-        [LuisIntent("Order")]
-        public async Task Order(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        public override async Task DefaultMatchHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
         {
-            var message = await activity;
-
-            EntityRecommendation menuEntityRecommendation;
-            EntityRecommendation sizeEntityRecommendation;
-            EntityRecommendation quantityEntityRecommendation;
-
-            string menu = "";
-            string size = "보통";
-            string quantity = "한그릇";
-
-            if(result.TryFindEntity("Menu", out menuEntityRecommendation))
+            if (originalQueryText == "그만")
             {
-                menu = menuEntityRecommendation.Entity.Replace(" ", "");
-            }
-            else
-            {
-                await context.PostAsync("없는 메뉴를 선택했습니다.");
-                context.Wait(this.MessageReceived);
+                context.Done("");
                 return;
             }
 
-            if (result.TryFindEntity("Size", out sizeEntityRecommendation))
-            {
-                size = sizeEntityRecommendation.Entity.Replace(" ", "");
-            }
+            await context.PostAsync(result.Answers.First().Answer);
 
-            if (result.TryFindEntity("Quantity", out quantityEntityRecommendation))
-            {
-                quantity = quantityEntityRecommendation.Entity.Replace(" ", "");
-            }
-
-
-            await context.PostAsync($"{menu} {size} {quantity}를 주문하셨습니다.");
-
-            context.Wait(this.MessageReceived);
+            context.Wait(MessageReceived);
         }
 
-        [LuisIntent("Delivery")]
-        public async Task Delivery(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        [QnAMakerResponseHandler(0.5)]
+        public async Task LowScoreHandler(IDialogContext context, string originalQueryText, QnAMakerResult result)
         {
-            await context.PostAsync("출발 했습니다. 잠시만 기다려 주세요.");
+            var messageActivity = ProcessResultAndCreateMessageActivity(context, ref result);
+            messageActivity.Text = $"I found an answer that might help...{result.Answers.First().Answer}.";
+            await context.PostAsync(messageActivity);
 
-            context.Wait(this.MessageReceived);
-        }
-
-        [LuisIntent("Finish")]
-        public async Task Finish(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
-        {
-            await context.PostAsync("주문 완료 되었습니다. 감사합니다.");
-
-            context.Done("주문완료");
+            context.Wait(MessageReceived);
         }
     }
 }
+                
