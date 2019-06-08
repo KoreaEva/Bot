@@ -27,6 +27,19 @@ CFE는 교육환경에서 챗봇을 사용할 수 있게 발전시켜 나가고 
 
 ## Microsoft Bot Framework 관련 강좌. (한글)
 
+### Version 4.0 기준 (지금 정리중)
+Bot Framework 4.0 (1) 시작하면서 [http://youngwook.com/221557533107](http://youngwook.com/221557533107)<br>
+Bot Framework 4.0 (2) Hello Bot [http://youngwook.com/221557638246](http://youngwook.com/221557638246)<br>
+Bot Framework 4.0 (3) 준비중<br>
+Bot Framework 4.0 (4) 준비중<br>
+Bot Framework 4.0 (5) 준비중<br>
+Bot Framework 4.0 (6) 준비중<br>
+Bot Framework 4.0 (7) 준비중<br>
+Bot Framework 4.0 (8) 준비중<br>
+Bot Framework 4.0 (9) 준비중<br>
+
+
+### Version 3.0 기준 (구버전)
 Microsoft Bot Framework 시작해보기 (1) [http://youngwook.com/220833049518](http://youngwook.com/220833049518)<br>
 Microsoft Bot Framework 시작해보기 (2) Hello Bot framework [http://youngwook.com/220833329084](http://youngwook.com/220833329084)<br> 
 Microsoft Bot Framework 시작해보기 (3) Bot Application 배포 [http://youngwook.com/220833898434](http://youngwook.com/220833898434)<br>
@@ -39,7 +52,8 @@ Microsoft Bot Framework 시작하기 카카오톡 연결하기[http://youngwook.
 
 ## 추천도서 
 
-집필중... (12월 출간 예정 Comming soon...)<br>
+## 가장 빨리 만나는 챗봇 프로그래밍 with Bot Framework
+![가장빨리 만나는 챗봇 프로그래밍 with Bot Framework](https://github.com/KoreaEva/Bot/blob/master/Book/book_cover.jpg?raw=true)<br>
 
 ## 동영상 강좌
 Building a Conversational Bot: From 0 to 60[https://channel9.msdn.com/Events/Build/2016/B821](https://channel9.msdn.com/Events/Build/2016/B821)<br>
