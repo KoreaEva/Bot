@@ -7,7 +7,7 @@ Bot 관련 정보들을 모아둡니다.
 Bot Framework 4.0 (1) 시작하면서 [http://youngwook.com/221557533107](http://youngwook.com/221557533107)<br>
 Bot Framework 4.0 (2) Hello Bot [http://youngwook.com/221557638246](http://youngwook.com/221557638246)<br>
 Bot Framework 4.0 (3) 배포하기 [http://youngwook.com/221558237007](http://youngwook.com/221558237007)<br>
-Bot Framework 4.0 (4) 준비중<br>
+Bot Framework 4.0 (4) ActivityHandler 클래스[http://youngwook.com/221559799475](http://youngwook.com/221559799475)<br>
 Bot Framework 4.0 (5) 준비중<br>
 Bot Framework 4.0 (6) 준비중<br>
 Bot Framework 4.0 (7) 준비중<br>
