@@ -9,8 +9,8 @@ Bot Framework 4.0 (2) Hello Bot [http://youngwook.com/221557638246](http://young
 Bot Framework 4.0 (3) 배포하기 [http://youngwook.com/221558237007](http://youngwook.com/221558237007)<br>
 Bot Framework 4.0 (4) ActivityHandler 클래스[http://youngwook.com/221559799475](http://youngwook.com/221559799475)<br>
 Bot Framework 4.0 (5) 메시지 보내기[http://youngwook.com/221560704140](http://youngwook.com/221560704140)<br>
-Bot Framework 4.0 (6) 준비중<br>
-Bot Framework 4.0 (7) 준비중<br>
+Bot Framework 4.0 (6) 이미지 보내기 [http://youngwook.com/221563047499](http://youngwook.com/221563047499)<br>
+Bot Framework 4.0 (7) 버튼 사용하기[http://youngwook.com/221563059789](http://youngwook.com/221563059789)<br>
 Bot Framework 4.0 (8) 준비중<br>
 Bot Framework 4.0 (9) 준비중<br>
 
