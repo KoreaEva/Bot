@@ -4,27 +4,27 @@ Bot 관련 정보들을 모아둡니다.
 ## Microsoft Bot Framework 관련 강좌. (한글)
 
 ### Version 4.0 기준 (지금 정리중)
-Bot Framework 4.0 (1) 시작하면서 [http://youngwook.com/221557533107](http://youngwook.com/221557533107)<br>
-Bot Framework 4.0 (2) Hello Bot [http://youngwook.com/221557638246](http://youngwook.com/221557638246)<br>
-Bot Framework 4.0 (3) 배포하기 [http://youngwook.com/221558237007](http://youngwook.com/221558237007)<br>
-Bot Framework 4.0 (4) ActivityHandler 클래스[http://youngwook.com/221559799475](http://youngwook.com/221559799475)<br>
-Bot Framework 4.0 (5) 메시지 보내기[http://youngwook.com/221560704140](http://youngwook.com/221560704140)<br>
-Bot Framework 4.0 (6) 이미지 보내기 [http://youngwook.com/221563047499](http://youngwook.com/221563047499)<br>
-Bot Framework 4.0 (7) 버튼 사용하기[http://youngwook.com/221563059789](http://youngwook.com/221563059789)<br>
+Bot Framework 4.0 (1) 시작하면서 [https://blog.naver.com/warit/221557533107](http://blog.naver.com/warit/221557533107)<br>
+Bot Framework 4.0 (2) Hello Bot [https://blog.naver.com/warit/221557638246](http://blog.naver.com/warit/221557638246)<br>
+Bot Framework 4.0 (3) 배포하기 [https://blog.naver.com/warit/221558237007](http://blog.naver.com/warit/221558237007)<br>
+Bot Framework 4.0 (4) ActivityHandler 클래스[https://blog.naver.com/warit/221559799475](http://blog.naver.com/warit/221559799475)<br>
+Bot Framework 4.0 (5) 메시지 보내기[https://blog.naver.com/warit/221560704140](http://blog.naver.com/warit/221560704140)<br>
+Bot Framework 4.0 (6) 이미지 보내기 [https://blog.naver.com/warit/221563047499](http://blog.naver.com/warit/221563047499)<br>
+Bot Framework 4.0 (7) 버튼 사용하기[https://blog.naver.com/warit/221563059789](http://blog.naver.com/warit/221563059789)<br>
 Bot Framework 4.0 (8) 준비중<br>
 Bot Framework 4.0 (9) 준비중<br>
 
 
 ### Version 3.0 기준 (구버전)
-Microsoft Bot Framework 시작해보기 (1) [http://youngwook.com/220833049518](http://youngwook.com/220833049518)<br>
-Microsoft Bot Framework 시작해보기 (2) Hello Bot framework [http://youngwook.com/220833329084](http://youngwook.com/220833329084)<br> 
-Microsoft Bot Framework 시작해보기 (3) Bot Application 배포 [http://youngwook.com/220833898434](http://youngwook.com/220833898434)<br>
-Microsoft Bot Framework 시작해보기 (4) Bot 등록과 스카이프에서 테스트 하기 [http://youngwook.com/220838138807](http://youngwook.com/220838138807)<br>
-Microsoft Bot Framework에서 Dialog 활용하기 [http://youngwook.com/221059044504](http://youngwook.com/221059044504)<br>
-Microsoft Bot Frameowkr 시작하기 QnA Maker 활용법 [http://youngwook.com/221061055000](http://youngwook.com/221061055000)<br>
-Microsoft Bot Framework와 다양한 메신저, 앱, 디바이스와 연결하는 DirectLine 3.0 기능 활용하기.[http://youngwook.com/221060005993](http://youngwook.com/221060005993)<br>
-Microsoft Bot Framework 시작하기 Direct Line API의 WPF 클라이언트 만들기[http://youngwook.com/221060689373](http://youngwook.com/221060689373)<br>
-Microsoft Bot Framework 시작하기 카카오톡 연결하기[http://youngwook.com/221068691533](http://youngwook.com/221068691533)<br>
+Microsoft Bot Framework 시작해보기 (1) [https://blog.naver.com/warit/220833049518](http://blog.naver.com/warit/220833049518)<br>
+Microsoft Bot Framework 시작해보기 (2) Hello Bot framework [https://blog.naver.com/warit/220833329084](http://blog.naver.com/warit/220833329084)<br> 
+Microsoft Bot Framework 시작해보기 (3) Bot Application 배포 [https://blog.naver.com/warit/220833898434](http://blog.naver.com/warit/220833898434)<br>
+Microsoft Bot Framework 시작해보기 (4) Bot 등록과 스카이프에서 테스트 하기 [https://blog.naver.com/warit/220838138807](http://blog.naver.com/warit/220838138807)<br>
+Microsoft Bot Framework에서 Dialog 활용하기 [https://blog.naver.com/warit/221059044504](http://blog.naver.com/warit/221059044504)<br>
+Microsoft Bot Frameowkr 시작하기 QnA Maker 활용법 [https://blog.naver.com/warit/221061055000](http://blog.naver.com/warit/221061055000)<br>
+Microsoft Bot Framework와 다양한 메신저, 앱, 디바이스와 연결하는 DirectLine 3.0 기능 활용하기.[https://blog.naver.com/warit/221060005993](http://blog.naver.com/warit/221060005993)<br>
+Microsoft Bot Framework 시작하기 Direct Line API의 WPF 클라이언트 만들기[https://blog.naver.com/warit/221060689373](http://blog.naver.com/warit/221060689373)<br>
+Microsoft Bot Framework 시작하기 카카오톡 연결하기[https://blog.naver.com/warit/221068691533](http://blog.naver.com/warit/221068691533)<br>
 
 ## 추천도서 
 
